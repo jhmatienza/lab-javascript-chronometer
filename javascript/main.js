@@ -45,3 +45,17 @@ btnRight.onclick = function() {
     chronometer.resetClick();
   }
 };
+
+var chronometer2 = new Chronometer({
+  minDec: document.getElementById('min-dec-2'),
+  minUni: document.getElementById('min-uni-2'),
+  secDec: document.getElementById('sec-dec-2'),
+  secUni: document.getElementById('sec-uni-2'),
+  hunDec: document.getElementById('hun-dec-2'),
+  hunUni: document.getElementById('hun-uni-2'),
+  splitList: document.getElementById('splits')
+})
+
+document.getElementById("start-2").onclick = function() {
+  chronometer2.startClick();
+}
